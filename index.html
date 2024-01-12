@@ -1,36 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevCo-DPSS</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevCo, DPSS</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="https://github.com/DevCo-DPSS/DevCo-DPSS.github.io/blob/main/icon.png">
+  <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <header>
-        <h1>Welcome to DevCo-DPSS</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section id="about">
-        <h2>About Us</h2>
-        <p>Description of the tech club...</p>
-    </section>
-    <section id="projects">
-        <h2>Our Projects</h2>
-        <p>Details about projects...</p>
-    </section>
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <p>Contact information...</p>
-    </section>
-    <footer>
-        <p>© 2024 DevCo-DPSS</p>
-    </footer>
+  <header>
+    <h1>Welcome to DevCo, DPSS</h1>
+    <nav>
+      <ul>
+        <li><a href="/about.html">about us</a></li>
+        <li><a href="/projects.html">projects</a></li>
+        <li><a href="/contact.html">contact</a></li>
+        <li><a href="/members.html">members</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section id="about">
+    <h2>about us</h2>
+    <p>we code</p>
+  </section>
+  <section id="projects">
+    <h2>projects</h2>
+    <p>DPSSGPT, Updated CLP UI</p>
+  </section>
+  <section id="contact">
+    <h2>contact</h2>
+    <a href="https://instagram.com/devco.dpss" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://github.com/DevCo-DPSS" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://twitter.com/devcodpss" target="_blank"><i class="fab fa-twitter"></i></a>
+
+  </section>
+  <section id="easterEgg" style="display: none;">
+    <h2>Congratulations!</h2>
+    <p>You've found the easter egg! 🎉</p>
+    <p>Decode to get an invite: "tolib tolif nzm fmrgvw"</p>
+  </section>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const easterEggSection = document.getElementById("easterEgg");
+      let clickCount = 0;
+
+      function checkEasterEgg() {
+        if (clickCount >= 5) {
+          easterEggSection.style.display = "block";
+        }
+      }
+
+
+      const header = document.querySelector("header");
+      header.addEventListener("click", function () {
+        clickCount++;
+        checkEasterEgg();
+      });
+    });
+  </script>
+  <footer>
+    <p>© 2024 DevCo-DPSS</p>
+  </footer>
 </body>
+
 </html>
